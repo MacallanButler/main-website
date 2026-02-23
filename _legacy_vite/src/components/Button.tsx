@@ -1,0 +1,43 @@
+import React from 'react';
+
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+    variant?: 'primary' | 'secondary';
+    href?: string;
+    className?: string;
+    target?: React.HTMLAttributeAnchorTarget;
+    rel?: string;
+    download?: string;
+}
+
+export const Button: React.FC<ButtonProps> = ({
+    children,
+    variant = 'primary',
+    href,
+    className = '',
+    ...props
+}) => {
+    const baseStyles = "inline-flex items-center justify-center px-6 py-3 text-sm font-medium transition-all duration-300 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background disabled:opacity-50 disabled:cursor-not-allowed";
+
+    // Primary: White background, Black text. (Classic minimalist)
+    // Hover: subtle scale or opacity.
+    // The accent gradient will be applied to the NAME.
+
+    const primaryStyles = "bg-text-primary text-background hover:bg-white border border-transparent font-semibold";
+    const secondaryStyles = "text-text-secondary hover:text-text-primary bg-transparent hover:bg-white/5";
+
+    const combinedClassName = `${baseStyles} ${variant === 'primary' ? primaryStyles : secondaryStyles} ${className}`;
+
+    if (href) {
+        return (
+            <a href={href} className={combinedClassName} {...(props as any)}>
+                {children}
+            </a>
+        );
+    }
+
+    return (
+        <button className={combinedClassName} {...props}>
+            {children}
+        </button>
+    );
+};
