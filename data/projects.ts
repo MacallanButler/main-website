@@ -186,32 +186,5 @@ export const projectsData: ProjectData[] = [
             "Community Resource Hub",
             "Responsive Gallery"
         ]
-    },
-    {
-        id: "f1-fitness",
-        title: "F1 Fitness",
-        category: "Health & Fitness Tracker",
-        tagline: "A high-performance fitness tracker designed with F1 precision.",
-        description: "A sleek fitness tracking app with an F1-inspired UI. Track workouts, log meals, and monitor performance metrics through an immersive glassmorphism dashboard.",
-        image: "/projects/f1-fitness.png", // Changed image path to avoid conflict
-        role: "Frontend Developer",
-        year: "2025",
-        stack: ["React", "Vite", "TypeScript", "Tailwind CSS", "shadcn/ui"],
-        liveUrl: "https://f1-fitness.netlify.app", // Changed liveUrl to avoid conflict
-        challenge: {
-            title: "Immersive Data Visualisation",
-            description: "Presenting dry fitness metrics in a way that feels exciting and motivating required a strong visual theme and responsive, real-time UI updates."
-        },
-        solution: {
-            title: "F1 Pit Wall Aesthetic",
-            description: "We adopted an F1 telemetry-inspired design system — dark carbon-fibre backgrounds, neon cyan accents, and a bottom-nav pit wall layout — making every workout feel like race day."
-        },
-        features: [
-            "Workout Builder with Custom Scheduling",
-            "Performance Chart & History Tracking",
-            "Macro & Meal Logger",
-            "Glassmorphism Dashboard (Pit Wall)",
-            "LocalStorage Persistence"
-        ]
     }
 ];
