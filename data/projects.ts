@@ -160,31 +160,5 @@ export const projectsData: ProjectData[] = [
             "Race Simulation Mode"
         ],
     },
-    {
-        id: "solarpunk-arch",
-        title: "Solarpunk Architecture",
-        category: "E-commerce / Design",
-        tagline: "Exploring the future of sustainable, nature-integrated architecture.",
-        description: "A portfolio concept showcasing Solarpunk design principles, featuring lush greenery, renewable energy integration, and a hopeful vision of the future.",
-        image: "/projects/solarpunk.png",
-        role: "Frontend Developer",
-        year: "2025",
-        stack: ["React", "Vite", "Tailwind CSS"],
-        liveUrl: "https://solarpunk-arch.netlify.app", // Placeholder - Update after deploying
-        challenge: {
-            title: "Visualizing Utopia",
-            description: "Solarpunk is a niche aesthetic. The challenge was to create a design that feels futuristic but organic, avoiding the cold, sterile look of traditional sci-fi."
-        },
-        solution: {
-            title: "Organic Brutalism",
-            description: "We combined brutalist layout structures with soft, organic overlapping elements and a vibrant color palette to represent the fusion of technology and nature."
-        },
-        features: [
-            "Sustainable Design Showcase",
-            "Interactive 'Green' Toggle",
-            "Manifesto Section",
-            "Community Resource Hub",
-            "Responsive Gallery"
-        ]
-    }
+
 ];
